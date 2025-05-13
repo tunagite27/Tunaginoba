@@ -1,0 +1,18 @@
+[
+    {
+        "title": "継なぎ手",
+        "imagePath": "/Tunagite/images/TunagiteMain.jpg", 
+        "slug": "Tunagite" ,
+        "summary":"継なぎ手と言う名前でお手伝いや庭師、イベントの裏方等を\n仕事として行なっております。代表の三浦です。\n周りからは何でも屋さんとも呼ばれる事があります。",
+        "Area":"Suwa",
+        "Category":"Worker"
+      },
+      {
+        "title": "AI 地域未来塾",
+        "imagePath": "/AItiikimiraijyuku/images/AImiraijyukuMain.jpg", 
+        "slug": "AItiikimiraijyuku" ,
+        "summary":"わたしたちAI地域未来塾は、全ての人にAIの可能性と楽しさを\n知ってもらい、AIの力を使って地域を盛り上げるべく、\nゆいわーく茅野を中心に毎月1~3回、\n無料の講座を開設中です。どなたでもお越しになっていただき、パソコンを使って\n「実現したいこと」・「やってみたいこと」をぶつけてみてください。",
+        "Area":"Chino",
+        "Category":"Worker"
+      }
+]
