@@ -30,7 +30,7 @@ async function getData(): Promise<ContentInfo[]> {
 export default async function Page() { // Next.jsのページコンポーネントはデフォルトエクスポート
   const headerOffset = 'pt-24';
   // ダークモード対応を意識したスタイルを追加 (任意)
-  const sectionClasses = "flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-12 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800";
+  const sectionClasses = "flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-12 p-3 sm:p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800";
   const imageContainerClasses = "w-full md:w-1/3 flex justify-center items-center";
   const textContainerClasses = "w-full md:w-2/3 flex flex-col justify-center text-center md:text-left py-4";
   const headingTextClass = "text-gray-900 dark:text-white";
@@ -72,7 +72,7 @@ export default async function Page() { // Next.jsのページコンポーネン�
 
 
   return (
-    <main className={`flex min-h-screen flex-col items-center ${headerOffset} px-4 dark:bg-slate-900`}>
+    <main className={`flex min-h-screen flex-col items-center ${headerOffset} px-2 sm:px-4 dark:bg-slate-900`}>
 
       {/* --- セクション 1 --- */}
       <section className={sectionClasses}>
@@ -150,7 +150,7 @@ export default async function Page() { // Next.jsのページコンポーネン�
       </section>
 
       {/* --- SNS・外部リンクセクション --- */}
-      <section className={`w-full max-w-5xl p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800 mb-12`}>
+      <section className={`w-full max-w-5xl p-3 sm:p-4 md:p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800 mb-8 md:mb-12`}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className={`text-2xl font-semibold mb-4 border-b pb-2 ${headingTextClass} dark:border-gray-600`}>SNS</h3>
@@ -175,7 +175,7 @@ export default async function Page() { // Next.jsのページコンポーネン�
       </section>
 
       {/* === カルーセル表示エリア === */}
-      <div className="w-full max-w-7xl mx-auto mt-4 md:mt-8 mb-6">
+      <div className="w-full max-w-7xl mx-auto mt-8 mb-8 md:mt-10 md:mb-10">
         {/* カテゴリカルーセル */}
         <CategoryCarousel
           allContentItems={allContentData} // 全データを渡す
@@ -184,7 +184,7 @@ export default async function Page() { // Next.jsのページコンポーネン�
         />
         
         {/* エリアカルーセル (縦並びにするため、CategoryCarouselの下に配置) */}
-        <div className="mt-4 md:mt-8"> {/* カルーセル間のスペース */}
+        <div className="mt-8 md:mt-10"> {/* カルーセル間のスペース */}
           <AreaCarousel
             allContentItems={allContentData} // 全データを渡す
             currentContentArea={currentPost.Area} // このページのエリアを渡す

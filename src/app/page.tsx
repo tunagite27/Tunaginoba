@@ -51,7 +51,7 @@ export default async function LandingPage() { // async に変更して await を
 
   // pt-20 はヘッダーの高さなどに応じて調整してください
   return (
-    <div className="pt-20 sm:pt-28 overflow-x-hidden"> {/* 横スクロール防止のため overflow-x-hidden を追加 */}
+    <div className="pt-28 sm:pt-28 overflow-x-hidden"> {/* 横スクロール防止のため overflow-x-hidden を追加 */}
       {posts.map((post, index) => {
         // 偶数番目(0, 2, 4...)か奇数番目(1, 3, 5...)かを判定
         const isOdd = index % 2 !== 0;
