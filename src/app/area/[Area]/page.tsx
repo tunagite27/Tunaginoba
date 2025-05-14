@@ -61,7 +61,7 @@ export default async function AreaPage({ params }: PageProps) {
  if (posts.length === 0) {
   return (
    <div className="pt-20 min-h-screen flex flex-col items-center justify-center text-center px-4">
-    <h1 className="text-2xl font-semibold mb-4">{displayAreaName} エリア</h1>
+    <h1 className="text-2xl font-semibold mb-4">{displayAreaName}</h1>
     <p className="text-lg text-gray-600">表示できるコンテンツがまだありません。</p>
     <Link href="/" className="mt-8 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">
      ホームに戻る
@@ -71,8 +71,8 @@ export default async function AreaPage({ params }: PageProps) {
  }
  return (
   <div className="pt-20 overflow-x-hidden">
-   <h1 className="text-3xl md:text-4xl font-bold text-center my-8 px-4">
-    {displayAreaName} エリアのコンテンツ
+   <h1 className="text-2xl md:text-3xl font-bold text-left pl-4 sm:pl-8 md:pl-12 mt-32 sm:mt-0 mb-6 py-4 bg-gradient-to-r from-slate-200 via-slate-100/60 to-slate-50/30 border-b-2 border-blue-800 rounded-t-lg text-gray-800 dark:text-gray-100">
+    {displayAreaName}
    </h1>
    {posts.map((post, index) => {
     const isOdd = index % 2 !== 0;
