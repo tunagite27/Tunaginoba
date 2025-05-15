@@ -138,7 +138,7 @@ export default async function Page() { // Next.jsのページコンポーネン�
             <p className={bodyTextClass}>
               活動内容についてのお問い合わせ、ご依頼は、以下の連絡先までお気軽にご連絡ください。
             </p>
-            <div className="flex items-center justify-center md:justify-start gap-2">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2">
               <Mail size={18} className="text-gray-600 dark:text-gray-400 flex-shrink-0" /> 
               <a href="mailto:aimiraijuku@gmail.com" className={`${linkTextClass} break-all`}>
                 aimiraijuku@gmail.com
